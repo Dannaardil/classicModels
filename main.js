@@ -9,7 +9,7 @@ import {
 
 
 
-} from 'js/module/products.js'
+} from './js/module/products.js'
 
 
 import {
@@ -18,31 +18,31 @@ import {
 
 
 
-} from  'js/module/payments.js'
+} from  './js/module/payments.js'
 
 import {
     getShippedOrders,
     getOrdersFromOneClient
 
 
-}from 'js/module/orders.js'
+}from './js/module/orders.js'
 
 import {
     getOfficesFromOneCountry,
     getOfficesWithEmployees
 
-} from 'js/module/offices.js'
+} from './js/module/offices.js'
 
 import {
     getEmployeesFromOffice,
     getEmployeesWithBoss,
     getEmployeesWithOffice
 
-}from 'js/module/employees.js'
+}from './js/module/employees.js'
 import {
     getOneClient,
     getClientsFromOneCity,
     getClientsWithSalesRep
 
-} from 'js/module/costumers.js'
-console.log(await getStockProducts())
+} from './js/module/costumers.js'
+console.log(await getEmployeesFromOffice())

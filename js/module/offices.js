@@ -5,7 +5,7 @@ import { connection } from '../../helpers/connection.js';
 ///8. **Detalles de oficinas en un país específico (por ejemplo, 'USA'):**
 
 export const getOfficesFromOneCountry= async () => {
-    const [results] = await connection.query('select officeCode, city, country, phone from offices where country = USA');
+    const [results] = await connection.query(`select officeCode, city, country, phone from offices where country = 'USA'`);
     return results;
 }
 

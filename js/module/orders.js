@@ -3,7 +3,7 @@ import { connection } from '../../helpers/connection.js';
 
 //5
 export const getShippedOrders= async () => {
-    const [results] = await connection.query('select orderNumber, orderDate, requiredDate, shippedDate, status, customerNumber from orders where status = Shipped');
+    const [results] = await connection.query(`select orderNumber, orderDate, requiredDate, shippedDate, status, customerNumber from orders where status = 'Shipped'`);
     return results;
 }
 
