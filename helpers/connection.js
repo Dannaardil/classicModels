@@ -1,10 +1,9 @@
-
 import mysql from 'mysql2/promise';
 
 export const connection = await mysql.createConnection({
-  host: 'monorail.proxy.rlwy.net',
-  user: 'railway',
-  database: 'm2_dannnikoleardilafuentes',
-  port: 57265,
-  password: 'hHFAaXmhXvtUycndbxSTQwmAlTrMfZXs'
+  host: '172.16.101.146',
+  user: 'camper',
+  database: 'm2_dannanikoleardilafuentes',
+  port: 3306,
+  password: 'campus2023'
 });
